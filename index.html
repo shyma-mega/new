@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d40ed04a6d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>auto typing text</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">Mega</div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#"> Contact</a></li>
+        </ul>
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </nav>
+    <!-- main -->
+    <div class="main-card">
+        <h1>Shyma Mega</h1>
+        <p>I'm a <span class="auto-text"></span></p>
+    </div>
+            <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+            <script>
+                var typed = new Typed(".auto-text",{
+                    strings: ["Developer" , "YouTuber" , "Freelancer" , " Photographer"],
+                    typeSpeed: 30 ,
+                    backSpeed: 20 ,
+                    loop: true
+                })
+            </script>
+</body>
+</html>
